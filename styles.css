@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header {
+  background-color: rgba(49, 49, 49, 1);
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+
+main {
+  flex-grow: 1;
+  min-height: 100vh;
+  background-color: #222224;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  padding: 50px 0;
+}
+.content img {
+  max-width: 1000px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.h-full {
+  height: 100%;
+}
+
+#startButton {
+  background-color: rgb(32, 81, 187);
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+#startButton:hover {
+  background-color: rgb(14, 77, 213);
+}
+
+
+footer {
+  color: rgba(125, 125, 125, 1);
+  background-color: rgba(49, 49, 49, 1);
+}
+.flex_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+}
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 0;
+}
+.social_media a {
+  display: inline-block;
+  margin-right: 40px;
+}
+.social_media img {
+  width: 50px;
+  transform: scale(1);
+  transition: all ease-in-out 0.3s;
+}
+.social_media a:hover img {
+  transform: scale(1.1);
+}
+.social_media a:last-child {
+  margin-right: 0;
+}
+.footer_text {
+  text-align: center;
+  font-size: 18px;
+}
+.it_academy_link {
+  color: rgba(125, 125, 125, 1);
+  transition: color ease-in-out 0.3s;
+}
+.it_academy_link:hover {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
