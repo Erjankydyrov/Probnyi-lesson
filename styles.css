@@ -13,6 +13,7 @@ html {
   flex-direction: column;
   height: 100%;
 }
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -22,6 +23,7 @@ html {
 header {
   background-color: rgba(49, 49, 49, 1);
 }
+
 header ul {
   list-style-type: none;
   margin: 0;
@@ -31,6 +33,7 @@ header ul {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   width: 100px;
 }
@@ -57,35 +60,37 @@ main {
   height: 100%;
   padding: 50px 0;
 }
+
 .content img {
   max-width: 1000px;
   object-fit: cover;
   margin: 0 auto;
 }
+
 .h-full {
   height: 100%;
 }
 
 #startButton {
   background-color: rgb(32, 81, 187);
-  color: white; 
-  padding: 10px 20px; 
+  color: white;
+  padding: 10px 20px;
   font-size: 16px;
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #startButton:hover {
   background-color: rgb(14, 77, 213);
 }
 
-
 footer {
   color: rgba(125, 125, 125, 1);
   background-color: rgba(49, 49, 49, 1);
 }
+
 .flex_footer {
   display: flex;
   flex-direction: column;
@@ -94,6 +99,7 @@ footer {
 
   padding: 50px 20px;
 }
+
 .social_media {
   display: flex;
   justify-content: center;
@@ -101,29 +107,36 @@ footer {
 
   padding: 30px 0;
 }
+
 .social_media a {
   display: inline-block;
   margin-right: 40px;
 }
+
 .social_media img {
   width: 50px;
   transform: scale(1);
   transition: all ease-in-out 0.3s;
 }
+
 .social_media a:hover img {
   transform: scale(1.1);
 }
+
 .social_media a:last-child {
   margin-right: 0;
 }
+
 .footer_text {
   text-align: center;
   font-size: 18px;
 }
+
 .it_academy_link {
   color: rgba(125, 125, 125, 1);
   transition: color ease-in-out 0.3s;
 }
+
 .it_academy_link:hover {
   color: rgb(255, 255, 255);
 }
@@ -131,8 +144,10 @@ footer {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateX(-100px);
   }
   to {
     opacity: 1;
+    transform: translateX(0px);
   }
 }
